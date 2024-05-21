@@ -1,0 +1,556 @@
+/* Reset default styles 
+  This section resets the default margin, padding, and box-sizing for all elements. */
+  * {
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes the default padding */
+    box-sizing: border-box; /* Sets the box-sizing to border-box for all elements */
+}
+  
+/* General body styling 
+  This section sets the default font family, background color, and text color for the body element. */
+body {
+    font-family: 'Roboto', sans-serif; /* Sets the font family to Roboto */
+    background-color: #f5f5f5; /* Sets the background color to a light gray */
+    color: #333; /* Sets the text color to dark gray */
+}
+  
+/* Header styling 
+  This section styles the header, including its background color, padding, text alignment, and box shadow. */
+header {
+    background-color: #fff; /* Sets the background color to white */
+    padding: 20px; /* Adds 20px padding around the header */
+    text-align: center; /* Centers the text inside the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the header */
+}
+  
+/* Main heading (h1) styling 
+  This section styles the main heading, including its color, font size, margin, text transformation, and letter spacing. */
+h1 {
+    color: #333; /* Sets the text color to dark gray */
+    font-size: 36px; /* Sets the font size to 36px */
+    margin-bottom: 10px; /* Adds a 10px margin below the heading */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    letter-spacing: 2px; /* Adds 2px letter spacing */
+}
+  
+/* Navigation styling 
+  This section removes the default list style for the navigation list. */
+nav ul {
+    list-style-type: none; /* Removes the bullet points from the list */
+}
+  
+/* Navigation list items styling 
+  This section sets the display property and margin for the navigation list items. */
+nav ul li {
+    display: inline-block; /* Displays the list items inline */
+    margin-right: 10px; /* Adds a 10px margin to the right of each list item */
+}
+  
+/* Navigation links styling 
+  This section styles the navigation links, including their color, text decoration, transition, font size, padding, and border radius. */
+nav ul li a {
+    color: #666; /* Sets the text color to light gray */
+    text-decoration: none; /* Removes the underline from the links */
+    transition: color 0.3s ease; /* Adds a transition effect to the color */
+    font-size: 18px; /* Sets the font size to 18px */
+    padding: 5px 10px; /* Adds padding around the links */
+    border-radius: 5px; /* Rounds the corners of the links */
+}
+  
+/* Navigation links hover effect 
+  This section changes the background color and text color of the navigation links on hover. */
+nav ul li a:hover {
+    color: #fff; /* Changes the text color to white on hover */
+    background-color: #ff6f00; /* Changes the background color to orange on hover */
+}
+  
+/* Main content styling 
+  This section sets the padding for the main content area. */
+main {
+    padding: 40px; /* Adds 40px padding around the main content */
+}
+  
+/* Section styling 
+  This section styles the sections, including their margin, background color, padding, border radius, and box shadow. */
+section {
+    margin-bottom: 60px; /* Adds a 60px margin below each section */
+    background-color: #fff; /* Sets the background color to white */
+    padding: 40px; /* Adds 40px padding inside the sections */
+    border-radius: 10px; /* Rounds the corners of the sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow to the sections */
+}
+  
+/* Subheading (h2) styling 
+  This section styles the subheadings, including their font size, margin, color, text transformation, letter spacing, border, and padding. */
+h2 {
+    font-size: 28px; /* Sets the font size to 28px */
+    margin-bottom: 20px; /* Adds a 20px margin below the subheadings */
+    color: #333; /* Sets the text color to dark gray */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    letter-spacing: 1px; /* Adds 1px letter spacing */
+    border-bottom: 2px solid #ff6f00; /* Adds an orange border below the subheadings */
+    padding-bottom: 10px; /* Adds 10px padding below the subheadings */
+    display: inline-block; /* Displays the subheadings as inline blocks */
+}
+  
+/* Video wrapper styling 
+  This section sets the display, alignment, margin, and position for the video wrapper. */
+.video-wrapper {
+    display: flex; /* Sets the display property to flex */
+    flex-direction: column; /* Arranges the children in a column */
+    align-items: center; /* Centers the children horizontally */
+    margin-bottom: 30px; /* Adds a 30px margin below the video wrapper */
+    position: relative; /* Sets the position to relative */
+}
+  
+/* Video container styling 
+  This section sets the position, width, padding, height, overflow, border radius, and box shadow for the video container. */
+.video-container {
+    position: relative; /* Sets the position to relative */
+    width: 100%; /* Sets the width to 100% */
+    padding-bottom: 56.25%; /* Maintains a 16:9 aspect ratio */
+    height: 0; /* Sets the height to 0 */
+    overflow: hidden; /* Hides the overflow content */
+    border-radius: 10px; /* Rounds the corners of the video container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow to the video container */
+}
+  
+/* Video element styling 
+  This section sets the position, dimensions, and object fit for the video element. */
+.video-container video {
+    position: absolute; /* Sets the position to absolute */
+    top: 0; /* Aligns the top edge */
+    left: 0; /* Aligns the left edge */
+    width: 100%; /* Sets the width to 100% */
+    height: 100%; /* Sets the height to 100% */
+    object-fit: cover; /* Ensures the video covers the container */
+}
+  
+/* Video controls styling 
+  This section styles the video controls, including their display, alignment, margin, and button styling. */
+.video-controls {
+    display: flex; /* Sets the display property to flex */
+    align-items: center; /* Aligns the children vertically */
+    justify-content: center; /* Centers the children horizontally */
+    margin-top: 20px; /* Adds a 20px margin above the video controls */
+}
+  
+/* Video control buttons styling 
+  This section styles the video control buttons, including their background color, text color, border, padding, margin, cursor, transition, border radius, font size, text transformation, and letter spacing. */
+.video-controls button {
+    background-color: #ff6f00; /* Sets the background color to orange */
+    color: #fff; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    padding: 10px 20px; /* Adds padding around the buttons */
+    margin: 0 5px; /* Adds a 5px margin on the left and right of the buttons */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background-color 0.3s ease; /* Adds a transition effect to the background color */
+    border-radius: 5px; /* Rounds the corners of the buttons */
+    font-size: 16px; /* Sets the font size to 16px */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    letter-spacing: 1px; /* Adds 1px letter spacing */
+}
+  
+/* Video control buttons hover effect 
+  This section changes the background color of the video control buttons on hover. */
+.video-controls button:hover {
+    background-color: #f44336; /* Changes the background color to red on hover */
+}
+  
+/* Video control range input styling 
+  This section styles the range input for video controls, including its width, margin, appearance, background color, height, border radius, and outline. */
+.video-controls input[type="range"] {
+    width: 200px; /* Sets the width to 200px */
+    margin: 0 10px; /* Adds a 10px margin on the left and right of the range input */
+    -webkit-appearance: none; /* Removes the default appearance */
+    background-color: #ddd; /* Sets the background color to light gray */
+    height: 5px; /* Sets the height to 5px */
+    border-radius: 5px; /* Rounds the corners of the range input */
+    outline: none; /* Removes the outline */
+}
+  
+/* Video control range input thumb styling (WebKit) 
+  This section styles the thumb of the range input for WebKit browsers, including its appearance, dimensions, background color, border radius, and cursor. */
+.video-controls input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removes the default appearance */
+    width: 15px; /* Sets the width to 15px */
+    height: 15px; /* Sets the height to 15px */
+    background-color: #ff6f00; /* Sets the background color to orange */
+    border-radius: 50%; /* Rounds the corners of the thumb */
+    cursor: pointer; /* Changes the cursor to a pointer */
+}
+  
+/* Video control range input thumb styling (Mozilla) 
+  This section styles the thumb of the range input for Mozilla browsers, including its dimensions, background color, border radius, and cursor. */
+.video-controls input[type="range"]::-moz-range-thumb {
+    width: 15px; /* Sets the width to 15px */
+    height: 15px; /* Sets the height to 15px */
+    background-color: #ff6f00; /* Sets the background color to orange */
+    border-radius: 50%; /* Rounds the corners of the thumb */
+    cursor: pointer; /* Changes the cursor to a pointer */
+}
+  
+/* Video explanation styling 
+  This section sets the margin and text alignment for the video explanation. */
+.video-explanation {
+    margin-top: 30px; /* Adds a 30px margin above the video explanation */
+    text-align: justify; /* Justifies the text alignment */
+}
+  
+/* Video explanation paragraph styling 
+  This section styles the paragraphs inside the video explanation, including their margin, line height, text color, and font size. */
+.video-explanation p {
+    margin-bottom: 20px; /* Adds a 20px margin below the paragraphs */
+    line-height: 1.6; /* Sets the line height to 1.6 */
+    color: #666; /* Sets the text color to light gray */
+    font-size: 18px; /* Sets the font size to 18px */
+}
+  
+/* Spinner styling 
+  This section styles the spinner, including its position, dimensions, border radius, border color, and animation. */
+.spinner {
+    position: absolute; /* Sets the position to absolute */
+    top: 50%; /* Centers the spinner vertically */
+    left: 50%; /* Centers the spinner horizontally */
+    transform: translate(-50%, -50%); /* Centers the spinner */
+    width: 40px; /* Sets the width to 40px */
+    height: 40px; /* Sets the height to 40px */
+    border-radius: 50%; /* Rounds the corners of the spinner */
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Sets the border color */
+    border-top-color: #ff6f00; /* Sets the top border color to orange */
+    animation: spin 1s infinite linear; /* Adds a spin animation */
+}
+  
+/* Keyframes for spinner animation 
+  This section defines the keyframes for the spin animation, rotating the spinner from 0 to 360 degrees. */
+@keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg); /* Initial state: no rotation */
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg); /* Final state: 360-degree rotation */
+    }
+}
+  
+/* Volume level display styling 
+  This section styles the volume level display, including its position, background color, text color, padding, border radius, font size, and opacity. */
+.volume-level {
+    position: absolute; /* Sets the position to absolute */
+    bottom: 10px; /* Aligns the bottom edge */
+    right: 10px; /* Aligns the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    padding: 5px 10px; /* Adds padding around the display */
+    border-radius: 5px; /* Rounds the corners of the display */
+    font-size: 14px; /* Sets the font size to 14px */
+    opacity: 0; /* Sets the initial opacity to 0 */
+    transition: opacity 0.3s ease; /* Adds a transition effect to the opacity */
+}
+  
+/* Playback speed display styling 
+  This section styles the playback speed display, including its position, background color, text color, padding, border radius, font size, and opacity. */
+.playback-speed {
+    position: absolute; /* Sets the position to absolute */
+    bottom: 10px; /* Aligns the bottom edge */
+    right: 10px; /* Aligns the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    padding: 5px 10px; /* Adds padding around the display */
+    border-radius: 5px; /* Rounds the corners of the display */
+    font-size: 14px; /* Sets the font size to 14px */
+    opacity: 0; /* Sets the initial opacity to 0 */
+    transition: opacity 0.3s ease; /* Adds a transition effect to the opacity */
+}
+  
+/* Time display styling 
+  This section styles the time display, including its position, background color, text color, padding, border radius, font size, and opacity. */
+.time-display {
+    position: absolute; /* Sets the position to absolute */
+    bottom: 10px; /* Aligns the bottom edge */
+    right: 10px; /* Aligns the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    padding: 5px 10px; /* Adds padding around the display */
+    border-radius: 5px; /* Rounds the corners of the display */
+    font-size: 14px; /* Sets the font size to 14px */
+    opacity: 0; /* Sets the initial opacity to 0 */
+    transition: opacity 0.3s ease; /* Adds a transition effect to the opacity */
+}
+  
+/* Display on hover effect 
+  This section changes the opacity of the volume level, playback speed, and time display on hover. */
+.video-wrapper:hover .volume-level,
+.video-wrapper:hover .playback-speed,
+.video-wrapper:hover .time-display {
+    opacity: 1; /* Sets the opacity to 1 on hover */
+}
+  
+/* Picture-in-picture button styling 
+  This section styles the picture-in-picture button, including its position, background color, text color, border, padding, cursor, transition, border radius, font size, text transformation, letter spacing, and margin. */
+.pip-button {
+    position: absolute; /* Sets the position to absolute */
+    top: 10px; /* Aligns the top edge */
+    right: 10px; /* Aligns the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    padding: 5px 10px; /* Adds padding around the button */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background-color 0.3s ease; /* Adds a transition effect to the background color */
+    border-radius: 5px; /* Rounds the corners of the button */
+    font-size: 14px; /* Sets the font size to 14px */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    letter-spacing: 1px; /* Adds 1px letter spacing */
+    margin-top: 10px; /* Adds a 10px margin to the top of the button */
+}
+  
+/* Caption button styling 
+  This section styles the caption button, including its position, background color, text color, border, padding, cursor, transition, border radius, font size, text transformation, letter spacing, and margin. */
+.caption-button {
+    position: absolute; /* Sets the position to absolute */
+    top: 10px; /* Aligns the top edge */
+    right: 10px; /* Aligns the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    padding: 5px 10px; /* Adds padding around the button */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background-color 0.3s ease; /* Adds a transition effect to the background color */
+    border-radius: 5px; /* Rounds the corners of the button */
+    font-size: 14px; /* Sets the font size to 14px */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    letter-spacing: 1px; /* Adds 1px letter spacing */
+    margin-top: 10px; /* Adds a 10px margin to the top of the button */
+}
+  
+/* Annotation button styling 
+  This section styles the annotation button, including its position, background color, text color, border, padding, cursor, transition, border radius, font size, text transformation, letter spacing, and margin. */
+.annotation-button {
+    position: absolute; /* Sets the position to absolute */
+    top: 10px; /* Aligns the top edge */
+    right: 10px; /* Aligns the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    padding: 5px 10px; /* Adds padding around the button */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background-color 0.3s ease; /* Adds a transition effect to the background color */
+    border-radius: 5px; /* Rounds the corners of the button */
+    font-size: 14px; /* Sets the font size to 14px */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    letter-spacing: 1px; /* Adds 1px letter spacing */
+    margin-top: 10px; /* Adds a 10px margin to the top of the button */
+}
+  
+/* Quality button styling 
+  This section styles the quality button, including its position, background color, text color, border, padding, cursor, transition, border radius, font size, text transformation, letter spacing, and margin. */
+.quality-button {
+    position: absolute; /* Sets the position to absolute */
+    top: 10px; /* Aligns the top edge */
+    right: 10px; /* Aligns the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    padding: 5px 10px; /* Adds padding around the button */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background-color 0.3s ease; /* Adds a transition effect to the background color */
+    border-radius: 5px; /* Rounds the corners of the button */
+    font-size: 14px; /* Sets the font size to 14px */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    letter-spacing: 1px; /* Adds 1px letter spacing */
+    margin-top: 10px; /* Adds a 10px margin to the top of the button */
+}
+  
+/* Hover effect for buttons 
+  This section changes the background color of the picture-in-picture, caption, annotation, and quality buttons on hover. */
+.pip-button:hover,
+.caption-button:hover,
+.annotation-button:hover,
+.quality-button:hover {
+    background-color: #ff6f00; /* Changes the background color to orange on hover */
+}
+  
+/* Annotation styling 
+  This section styles the annotation, including its position, background color, text color, padding, border radius, font size, opacity, transition, and pointer events. */
+.annotation {
+    position: absolute; /* Sets the position to absolute */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    padding: 5px 10px; /* Adds padding around the annotation */
+    border-radius: 5px; /* Rounds the corners of the annotation */
+    font-size: 14px; /* Sets the font size to 14px */
+    opacity: 0; /* Sets the initial opacity to 0 */
+    transition: opacity 0.3s ease; /* Adds a transition effect to the opacity */
+    pointer-events: none; /* Disables pointer events */
+}
+  
+/* Annotation hover effect 
+  This section changes the opacity of the annotation on hover. */
+.video-wrapper:hover .annotation {
+    opacity: 1; /* Sets the opacity to 1 on hover */
+}
+  
+/* Quality settings styling 
+  This section styles the quality settings, including their position, background color, text color, padding, border radius, font size, and display property. */
+.quality-settings {
+    position: absolute; /* Sets the position to absolute */
+    top: 40px; /* Aligns the top edge */
+    right: 10px; /* Aligns the right edge */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets the background color to semi-transparent black */
+    color: #fff; /* Sets the text color to white */
+    padding: 10px; /* Adds padding around the quality settings */
+    border-radius: 5px; /* Rounds the corners of the quality settings */
+    font-size: 14px; /* Sets the font size to 14px */
+    display: none; /* Hides the quality settings initially */
+}
+  
+/* Quality option styling 
+  This section styles the quality options, including their cursor, padding, and transition. */
+.quality-option {
+    cursor: pointer; /* Changes the cursor to a pointer */
+    padding: 5px; /* Adds padding around the quality options */
+    transition: background-color 0.3s ease; /* Adds a transition effect to the background color */
+}
+  
+/* Quality option hover effect 
+  This section changes the background color of the quality options on hover. */
+.quality-option:hover {
+    background-color: #ff6f00; /* Changes the background color to orange on hover */
+}
+  
+/* Footer styling 
+  This section styles the footer, including its background color, text color, padding, text alignment, and font size. */
+footer {
+    background-color: #333; /* Sets the background color to dark gray */
+    color: #fff; /* Sets the text color to white */
+    padding: 20px; /* Adds padding around the footer */
+    text-align: center; /* Centers the text inside the footer */
+    font-size: 14px; /* Sets the font size to 14px */
+}
+  
+/* Footer paragraph styling 
+  This section styles the paragraphs inside the footer, including their margin. */
+footer p {
+    margin-bottom: 10px; /* Adds a 10px margin below the paragraphs */
+}
+  
+/* Footer links styling 
+  This section styles the links inside the footer, including their color, text decoration, and transition. */
+footer a {
+    color: #fff; /* Sets the text color to white */
+    text-decoration: none; /* Removes the underline from the links */
+    transition: color 0.3s ease; /* Adds a transition effect to the color */
+}
+  
+/* Footer links hover effect 
+  This section changes the color of the links inside the footer on hover. */
+footer a:hover {
+    color: #ff6f00; /* Changes the text color to orange on hover */
+}
+  
+/* Media Queries 
+  This section contains media queries for responsive design, adjusting styles based on the screen width. */
+  
+/* Media query for screens up to 768px 
+  This section adjusts the styles for smaller screens, including the header padding, heading font size, navigation link font size, padding, section padding, subheading font size, video control button padding and font size, range input width, video explanation font size, and various display elements' font size and dimensions. */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduces the padding to 10px */
+    }
+  
+    h1 {
+        font-size: 28px; /* Reduces the font size to 28px */
+    }
+  
+    nav ul li a {
+        font-size: 16px; /* Reduces the font size to 16px */
+        padding: 5px; /* Reduces the padding to 5px */
+    }
+  
+    main {
+        padding: 20px; /* Reduces the padding to 20px */
+    }
+  
+    section {
+        padding: 20px; /* Reduces the padding to 20px */
+    }
+  
+    h2 {
+        font-size: 24px; /* Reduces the font size to 24px */
+    }
+  
+    .video-controls button {
+        padding: 8px 16px; /* Reduces the padding to 8px 16px */
+        font-size: 14px; /* Reduces the font size to 14px */
+    }
+  
+    .video-controls input[type="range"] {
+        width: 150px; /* Reduces the width to 150px */
+    }
+  
+    .video-explanation p {
+        font-size: 16px; /* Reduces the font size to 16px */
+    }
+  
+    .volume-level,
+    .playback-speed,
+    .time-display,
+    .pip-button,
+    .caption-button,
+    .annotation-button,
+    .quality-button,
+    .annotation,
+    .quality-settings {
+        font-size: 12px; /* Reduces the font size to 12px */
+    }
+  
+    .spinner {
+        width: 30px; /* Reduces the width to 30px */
+        height: 30px; /* Reduces the height to 30px */
+        border-width: 3px; /* Reduces the border width to 3px */
+    }
+}
+  
+/* Media query for screens up to 480px 
+  This section adjusts the styles for even smaller screens, including the heading font size, navigation list item display, video control button padding and font size, range input width, video explanation font size, various display elements' font size, and spinner dimensions. */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Reduces the font size to 24px */
+    }
+  
+    nav ul li {
+        display: block; /* Changes the display property to block */
+        margin-bottom: 10px; /* Adds a 10px margin below the list items */
+    }
+  
+    .video-controls button {
+        padding: 6px 12px; /* Reduces the padding to 6px 12px */
+        font-size: 12px; /* Reduces the font size to 12px */
+    }
+  
+    .video-controls input[type="range"] {
+        width: 100px; /* Reduces the width to 100px */
+    }
+  
+    .video-explanation p {
+        font-size: 14px; /* Reduces the font size to 14px */
+    }
+  
+    .volume-level,
+    .playback-speed,
+    .time-display,
+    .pip-button,
+    .caption-button,
+    .annotation-button,
+    .quality-button,
+    .annotation,
+    .quality-settings {
+        font-size: 10px; /* Reduces the font size to 10px */
+    }
+  
+    .spinner {
+        width: 20px; /* Reduces the width to 20px */
+        height: 20px; /* Reduces the height to 20px */
+        border-width: 2px; /* Reduces the border width to 2px */
+    }
+}
